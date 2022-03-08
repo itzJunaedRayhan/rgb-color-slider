@@ -9,6 +9,7 @@ let wrapper   = document.querySelector(".wrapper");
 function rgbColorSlider () {
     let result = `${parseInt(r.value)},${parseInt(g.value)},${parseInt(b.value)}`;
     rgbButton.innerText = `rgb(${result})`;
+    rgbButton.style.backgroundColor = `rgb(${result})`;
     wrapper.style.backgroundColor = `rgb(${result})`;
 }
 
