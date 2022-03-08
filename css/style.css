@@ -1,0 +1,135 @@
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(0, 117, 255);
+    color: #fff;
+    font-family: Poppins;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: 'Poppins', sans-serif;
+}
+
+.left{
+    width: 60%;
+    max-width: 520px;
+    min-height: 250px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 25px 25px 30px rgba(0, 0, 0, 0.3);
+}
+
+.left h2{
+    color: tomato;
+    font-size: 26px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px 3px;
+}
+
+.left .form-group{
+    width: 100%;
+    color: tomato;
+    padding:  10px 5px;
+}
+
+.left .form-group input[type="range"] {
+    width: 90%;
+    padding: 0;
+    margin: 0;
+}
+
+.left .form-group label{
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    padding: 5px 10px 5px 0px;
+    font-size: 22px;
+}
+
+.left button {
+    width: 170px;
+    background-color: rgb(0, 117, 255);
+    border: none;
+    padding: 10px 16px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    margin: 10px auto 17px auto;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 0px 10px rgba(0, 119, 255, 0.7);
+}
+
+
+.right{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.author{
+    width: 450px;
+    height: 300px;
+}
+
+.author img{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+@media only screen and (max-width: 1400px) {
+    .wrapper{
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .author{
+        display: none;
+    }
+    .left{
+        width: 100%;
+    }
+    .right{
+        width: 0%;
+    }
+}
+
+
+@media only screen and (max-width: 420px) {
+    .left h2{
+        font-size: 22px;
+    }
+
+    .left .form-group {
+        padding: 7px 2px;
+    }
+
+    .left .form-group input[type="range"] {
+        width: 85%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .left .form-group label{
+        font-size: 17px;
+    }
+
+    .left button{
+        font-size: 16px;
+    }
+}
